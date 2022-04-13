@@ -1,0 +1,91 @@
+/* MDN - Mozilla developper network */
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap');
+
+.imghd{                     /*mise en forme des images dans le header */
+    height: 100%;           /*100% du parent*/
+    
+
+
+}
+
+
+
+.enligne{                           /* Caractéristique du header */
+    height: 15vh;                   /* 15% de la taille de la page WEB */
+    
+    display:flex;                   /* pour avoir le header en ligne */
+    justify-content:space-around;    /* Gestion des espaces entre les éléments du header */
+}    
+h1{
+    
+    letter-spacing: 0.5rem;         /* espace entre les lettres*/
+    font-weight:bold;               /* rendre le texte  gras*/
+}
+
+/* selecteur multiphe */
+h1,h2, h3 {
+    font-family: 'Anek+Tamil',sans-serif;  
+    Text-align: center;
+}
+.greyshadow{
+    text-shadow: .5rem .5rem 0 rgb(102, 96, 96);                /* 4 partenaires pour l'ombre*/
+}
+pre{
+    font-size: 1.1 rem;              /* améliore la visibilité de lecture*/
+}
+body{
+    font-family: Arial, Helvetica, sans-serif; /* tout le body sera avec cette police*/
+    letter-spacing: .02rem;
+    margin: 0;                              /* on eleve les marges*/ 
+    height: 100vh;  
+    /* background: red;                    /* en choisisant une coleur */
+    /*background: rgb(141, 245, 172);       /* en choisisant la réference RGB */
+    /*background: #8df5ac;                /* en choisissant l'hexadécimale */
+    /* background: hsl(300,50%,75%);       /*en choisissant l'option du spectre */
+    /* background: hsla(300,50%,75%);       /*en choisissant l'option du spectre avec opacité */
+    /* background: rgba(0,255,127,.2);     /* avec de l'opacité */ 
+    /* background-image:linear-gradient(#FFF, #888 );       /* en choissant des effets  degradé*/
+                            /*la hauteur du viewport* sans les marges*/
+}
+
+#members{
+    display: flex; /* pour mettre horizontalement */ 
+    flex-wrap: wrap; /* pour aller à la ligne*/
+    justify-content: space-evenly; /* pour pas coller au bord en largeur*/ 
+    
+}
+.member{
+    background: #FFF;
+    border: #000 solid .1rem;  /* type de bordure avec la couleur et épaisseur*/
+    width: 15rem; /* largeur de 20 caractere de largeur*/
+    text-align: center; /* aligner le texte */
+    border-radius: 10%; /* arrondir les bord du truc*/ 
+    margin: 1rem; /* une marge pour avoir un espace*/
+
+}
+    
+.member img { /* selecteur hierarchique ascendant et descendant   */ 
+    
+    width : 80%; /* pour les images de la classe member 80% de la taille du parent*/
+    margin: 10%;
+    border-radius: 100%;
+}
+
+/*une classe pour les couleurs en fonction du genre*/
+.boy{
+    background-image: linear-gradient(#f0f,#fff);
+}
+.girl{
+    background-image: linear-gradient(rgb(56, 214, 151),#fff);
+}
+#menu{
+    height: 10vh; 
+    justify-content:space-around ;
+    border-right: 25vh; 
+}
+
+header, #intro, #team {
+    width: 90%;
+    margin: auto;
+}
