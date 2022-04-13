@@ -11,7 +11,7 @@
 
 
 
-.enligne{                           /* Caractéristique du header */
+header{                           /* Caractéristique du header */
     /*height: 15vh;                   /* 15% de la taille de la page WEB */
     
     display:flex;                   /* pour avoir le header en ligne */
@@ -60,7 +60,7 @@ body{
     border: #000 solid .1rem;  /* type de bordure avec la couleur et épaisseur*/
     width: 15rem; /* largeur de 20 caractere de largeur*/
     text-align: center; /* aligner le texte */
-    border-radius: 10%; /* arrondir les bord du truc*/ 
+    border-radius: 1rem; /* arrondir les bord du truc*/ 
     margin: 1rem; /* une marge pour avoir un espace*/
 
 }
@@ -86,11 +86,8 @@ header, #intro, #team {
     margin: auto;
 }
 #menu ul{ /* tous les UL de l'ID MENU*/
-    height: 10vh; 
-    border-right: 25vh; 
-    
     padding:0; /* pour les marges intérieurs */ 
-    margin:0; /* pour les marges exterieurs */
+    /*margin:0; /* pour les marges exterieurs */
     list-style:none;  /* enleve les puces */
     display: flex;
     flex-wrap: wrap; /* pour la partie responsisive*/
@@ -109,11 +106,12 @@ header, #intro, #team {
     font-family: 'Anek+Tamil',sans-serif;
     text-decoration:none;
     color:#eee;   
-    padding:5rem; 
+    padding:2rem; 
     transition: all .75s ease-in-out;
 }
 
 #menu a:hover {
     background:rgb(102, 176, 139); 
-    color: #555;   
+    color: #555; 
+    margin: auto;  
 }
