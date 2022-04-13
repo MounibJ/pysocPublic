@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap');
 
 .imghd{                     /*mise en forme des images dans le header */
-    height: 100%;           /*100% du parent*/
-    
+   /* height: 100%;           /*100% du parent*/
+    height : 10rem;
 
 
 }
@@ -12,7 +12,7 @@
 
 
 .enligne{                           /* Caractéristique du header */
-    height: 15vh;                   /* 15% de la taille de la page WEB */
+    /*height: 15vh;                   /* 15% de la taille de la page WEB */
     
     display:flex;                   /* pour avoir le header en ligne */
     justify-content:space-around;    /* Gestion des espaces entre les éléments du header */
@@ -79,13 +79,41 @@ body{
 .girl{
     background-image: linear-gradient(rgb(56, 214, 151),#fff);
 }
-#menu{
-    height: 10vh; 
-    justify-content:space-around ;
-    border-right: 25vh; 
-}
+
 
 header, #intro, #team {
     width: 90%;
     margin: auto;
+}
+#menu ul{ /* tous les UL de l'ID MENU*/
+    height: 10vh; 
+    border-right: 25vh; 
+    
+    padding:0; /* pour les marges intérieurs */ 
+    margin:0; /* pour les marges exterieurs */
+    list-style:none;  /* enleve les puces */
+    display: flex;
+    flex-wrap: wrap; /* pour la partie responsisive*/
+    justify-content: space-evenly;
+}
+
+#menu{
+    margin: 2rem 0; /* c'est pour 2 rem en haut et en bas et 0 a droite et a fauche*/
+    padding: 1rem; 0;
+    background: rgb(105, 94, 94); /*c'est pour le fond
+    color: #EEE; /* c'est pour la couleur du texte*/
+    position:sticky; /* elle se fige en haut quand on schrolle */
+    top:0;
+}
+#menu a{
+    font-family: 'Anek+Tamil',sans-serif;
+    text-decoration:none;
+    color:#eee;   
+    padding:5rem; 
+    transition: all .75s ease-in-out;
+}
+
+#menu a:hover {
+    background:rgb(102, 176, 139); 
+    color: #555;   
 }
