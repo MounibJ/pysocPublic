@@ -1,0 +1,11 @@
+.violet{
+    background: #800080;
+    color: #fff;
+}
+
+.jb-background{
+    background-image: url(../pics/bg.webp) ; /* chemin relatif*/
+    background-size: cover;
+    color: azure;
+}
+

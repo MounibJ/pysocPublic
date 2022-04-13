@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pics/pysoclogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/pysoc.css">
+    <title> Pysoc : la meilleure startup</title>
+</head>
+<body>
+    
+    <main>
+
+        <header class="enligne">
+            
+            <img class="imghd" src="pics/imagepysoc.jpg" alt="">
+            <h1> Pysoc : la startup qui accélère le développement</h1>
+            <img  class="imghd" src="pics/flag.jpg" alt="">
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><a href="produit2" >Postuler</a></li>
+                <li><a href="https://github.com/" target="_blank">Github</a></li>
+                <li><a href="#" >nowhere</a></li>
+            </ul>
+            
+        </nav>
+        <div id="intro">
+            <h2>Présentation de la société</h2>
+            <p>Pysoc est une jeune stratup fondé au <time datetime="2020-03-16T12:00:00Z+01">début de la période du confinement</time>. 
+                Notre spécialité : <strong>Python</strong>! <br>notre équipe est 
+                <mark>jeune sans expérience mais très motivée </mark>. 
+                En outre tous nos commerciaux se déplacent en véhicule électrique
+                soucieux des émissions de CO <sub>2</sub>
+                Vous pouvez nous rencontrer dans nos nouveaux locaux 231 m <sup>2</sup> aux horaires 
+                suivants : 
+            </p>
+        </div>
+        <div class="contactez-nous">
+            <h1>Devenez un master en Python</h1>
+            <p>Vous voulez rejoidre une équipe dynamique, remplissez ce formulaire</p>
+            <form action="/page-traitement-donnees" method="post">
+            <div>
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Martin" required>
+            </div>
+            <div>
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" name="email" placeholder="pysoc@gmail.com" required>
+            </div>
+            <div>
+            <label for="sujet">Selectionnez un poste disponible</label>
+            <select name="sujet" id="sujet" required>
+            <option value="" disabled selected hidden>Postes disponible</option>
+            <option value="probleme-compte">Dev Python</option>
+            <option value="question-produit">Big Data/option>
+            <option value="suivi-commande">C++</option>
+            <option value="autre">Front</option>
+            </select>
+            </div>
+            <div>
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+            </div>
+            <div>
+            <button type="submit">Envoyer mon message</button>
+            </div>
+            </form>
+            </div>
+        
+       
+    </main>
+</body>
+</html>
